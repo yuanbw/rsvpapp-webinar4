@@ -13,8 +13,7 @@ jobs:
           command: |
             sudo rm /var/lib/dpkg/lock
             sudo dpkg --configure -a
-            sudo apt-get install -yq --no-install-recommends software-properties-common
-            sudo add-apt-repository ppa:fkrull/deadsnakes
+            sudo apt-get install -yq --no-install-recommends software-properties-common       
             sudo apt-get update
             sleep 5
             sudo rm /var/lib/dpkg/lock
