@@ -18,7 +18,7 @@ jobs:
             sleep 5
             sudo rm /var/lib/dpkg/lock
             sudo dpkg --configure -a
-            sudo apt-get install -yq --no-install-recommends python3.5
+            sudo apt-get install -yq --no-install-recommends python3.6
             sleep 5
             python -m pip install -i http://mirrors.aliyun.com/pypi/simple/ --trusted-host mirrors.aliyun.com -r requirements.txt
         
